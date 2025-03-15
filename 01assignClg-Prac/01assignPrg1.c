@@ -1,3 +1,4 @@
+//WAP to accept an integer using pointer and check whether it is even or odd
 #include<stdio.h>
 int main(){
     int num;

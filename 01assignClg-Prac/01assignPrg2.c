@@ -1,5 +1,5 @@
+//WAP to read two integers using pointers and perform all arithmetic operations on them
 #include <stdio.h>
-
 int main() {
     int num1, num2;
     int *ptr1 = &num1; 
