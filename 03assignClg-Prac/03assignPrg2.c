@@ -26,6 +26,6 @@ int main(){
     }
 
     int range = max - min;
-    printf("The range of given elements of a array is : %d", range);
+    printf("The range of given elements of an array is : %d", range);
     return 0;
 }
