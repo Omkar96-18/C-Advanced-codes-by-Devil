@@ -14,11 +14,16 @@ int main(){
             scanf("%d", &ele[i][j]);
         }
     }
+    int max = ele[0][0];
     printf("Entered Matrix is :\n ");
     for(int i = 0 ; i < row ; i++){
         for(int j = 0 ; j < col ; j++){
+            if(max < *(*(ele + i) + j)){
+                max = *(*(ele + i) + j);
+            }
             printf(" %d " ,*(*(ele + i) + j));
         }
         printf("\n");
     }
+    printf("Maximum element of the matrix is %d",max);
 }
