@@ -7,17 +7,17 @@ int main(){
     printf("Enter the number of column for the matrix :");
     scanf("%d",&col);
     int ele[row][col];
-    int **ptr = ele;
+    
     for(int i = 0 ; i < row ; i++){
         for(int j = 0 ; j < col ; j++){
             printf("Enter the value for element no. [%d][%d] " ,i + 1, j + 1);
-            scanf("%d", ptr[i][j]);
+            scanf("%d", &ele[i][j]);
         }
     }
     printf("Entered Matrix is :\n ");
     for(int i = 0 ; i < row ; i++){
         for(int j = 0 ; j < col ; j++){
-            printf(" %d " ,*ptr[i][j]);
+            printf(" %d " ,*(*(ele + i) + j));
         }
         printf("\n");
     }
